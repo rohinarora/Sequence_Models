@@ -5,6 +5,6 @@ http://ai.dinfo.unifi.it/paolo//ps/tnn-94-gradient.pdf
 * Practical Eg -
   * Below picture y<t> = 1 if x<t> is a proper noun
 ![](images/tmp1.jpg)
-  * ![](images/tmp2.jpg)
-  * ![](images/tmp3.jpg)
-  * ![](images/tmp4.png)
+![](images/tmp2.jpg)
+![](images/tmp3.jpg)
+![](images/tmp4.png)
