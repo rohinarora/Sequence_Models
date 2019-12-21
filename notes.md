@@ -7,4 +7,4 @@ http://ai.dinfo.unifi.it/paolo//ps/tnn-94-gradient.pdf
   * ![](images/tmp1.jpg)
   * ![](images/tmp2.jpg)
   * ![](images/tmp3.jpg)
-  * ![](images/tmp4.jpg)
+  * ![](images/tmp4.png)
