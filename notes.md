@@ -53,3 +53,32 @@ This is the loss for 1 example->
 What after LSTM? attention. The idea is to let every step of an RNN pick information to look at from some larger collection of information. if you are using an RNN to create a caption describing an image, it might pick a part of the image to look at for every word it outputs. Xu, et al. (2015)
 Grid LSTMs by Kalchbrenner, et al. (2015) . Work using RNNs in generative models – such as Gregor, et al. (2015), Chung, et al. (2015), or Bayer & Osendorfer (2015) – also seems very interesting. Lot more to come !
 In addition to the original authors, a lot of people contributed to the modern LSTM. A non-comprehensive list is: Felix Gers, Fred Cummins, Santiago Fernandez, Justin Bayer, Daan Wierstra, Julian Togelius, Faustian Gomez, Matteo Gagliolo, and Alex Graves. 
+
+* Language modeling-
+  * used in speech recognition, machine translation etc. Output things which are likely
+  * ![](images/tmp9.png)
+  * Once language model is trained, we can sample from it. <Shakespeare like text generation>
+  * Sampling from language model
+  * Let first output y (hat)<1> be generated. Feed it into next block of RNN. And keep doing it
+  * Stop if you get <EOS>. If <EOS> not in dictionary, sample say 50-100 words. You might also get <UNK> words. You have option to keep or discard them.
+  * ![](images/tmp10.png)
+  * ![](images/tmp11.jpg)
+  * ![](images/tmp12.jpg)
+
+^ The above joint probability is calculated on a new sentence given a trained NN. Each probability term is simply output of RNN at diff time steps.
+Corollary- (redundant point)The above model can also be used to predict "following next word" given set of words.
+
+The above is word level language model. Next we will see char level language model
+* ![](images/tmp13.jpg)
+Word level used more often
+
+Exploding gradients- use gradient clipping
+Vanishing gradients in RNN- Can’t capture long time step dependencies. Solution- better architectures.
+
+
+Bidirectional RNN with LSTM/GRU blocks is common
+
+Disadvantage of Bidirectional RNN - needs entire sentence to start doing processing. So for speech recognition, it would need entire sentence to start doing inference. Speech recognition uses more advanced techniques
+* ![](images/tmp14.png)
+Deeper RNN
+* ![](images/tmp15.png)
