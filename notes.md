@@ -11,6 +11,7 @@ This is the loss for 1 example->
 ![](images/tmp4.png)
 * GRU is simpler, faster, often better
 * LSTM is more powerful, flexible
+* LSTM
   * C -> cell state, the highway connection
   * a, also called h- hidden state. The softmax at output is not present by default in keras. Keras gives a(t)/h(t) as output
   * ![](images/tmp5.jpg)
