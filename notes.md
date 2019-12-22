@@ -14,7 +14,7 @@ This is the loss for 1 example->
 * LSTM
   * C -> cell state, the highway connection
   * a, also called h- hidden state. The softmax at output is not present by default in keras. Keras gives a(t)/h(t) as output
-  * ![](images/tmp5.jpg)
+  * ![](images/tmp5.JPG)
   * LSTM original paper
     http://web.eecs.utk.edu/~itamar/courses/ECE-692/Bobby_paper1.pdf
   * good - http://colah.github.io/posts/2015-08-Understanding-LSTMs/
